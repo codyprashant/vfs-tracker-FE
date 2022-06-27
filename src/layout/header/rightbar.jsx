@@ -7,15 +7,6 @@ const Rightbar = () => {
 
   const [moonlight, setMoonlight] = useState(false)
   const { i18n } = useTranslation();
-  const [selected, setSelected] = useState('en');
-
-  const changeLanguage = lng => {
-    i18n.changeLanguage(lng);
-    setSelected(lng);
-  };
-
-
-
 
   useEffect(() => {
     if (localStorage.getItem("layout_version") === "dark-only") {
