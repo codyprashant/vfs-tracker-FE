@@ -1,8 +1,6 @@
 {
   "name": "vfs-tracker",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://github.com/codyprashant",
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
     "@fullcalendar/daygrid": "^5.11.0",
