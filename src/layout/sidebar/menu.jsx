@@ -2,8 +2,8 @@ import { Home } from 'react-feather';
 
 export const MENUITEMS = [
     {
-        menutitle: 'General',
-        menucontent: 'Dashboards,Widgets',
+        menutitle: 'Slot Dashboards',
+        menucontent: 'Slots country basis',
         Items: [
             {
                 title: 'Dashboard', icon: Home, type: 'sub', active: false, children: [
