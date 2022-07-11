@@ -45,6 +45,8 @@ const  Sample = (props) => {
                                 <th>{"Category"}</th>
                                 <th>{"Sub-Category"}</th>
                                 <th>{"Status"}</th>
+                                <th>{"Slots"}</th>
+                                <th>{"Slot Timings"}</th>
                                 <th>{"Last checked(IST)"}</th>
                                 {/* <th>{"History"}</th> */}
                               </tr>
@@ -55,8 +57,10 @@ const  Sample = (props) => {
                                 <td width="25%">{slot.locationName}</td>
                                 <td width="15%">{slot.category}</td>
                                 <td width="10%">{slot.subCategory}</td>
-                                <td width="30%">{slot.availbilityRes}</td>
-                                <td width="20%">{formatDate(slot.recordChecked)}</td>
+                                <td width="15%">{slot.availbilityRes}</td>
+                                <td width="8%">{slot.availbileSlots}</td>
+                                <td width="12%">{slot.availbileTime}</td>
+                                <td width="15%">{formatDate(slot.recordChecked)}</td>
                                 {/* <td width="100px">{"Test"}</td> */}
                               </tr>
                           })
