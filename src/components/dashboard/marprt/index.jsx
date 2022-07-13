@@ -15,8 +15,8 @@ const  Sample = (props) => {
 
  async function getAllData () {
    // setisActive(true)
-   let source = "India"
-   let destination = "Netherland"
+   let source = "Morocco"
+   let destination = "Portugal"
    const response = await getSlotsData(source, destination);
    if(response.status === 'SUCCESS'){
      setSlotsData(response.message);
@@ -56,7 +56,7 @@ const  Sample = (props) => {
                               </tr>
                             </thead>
                             <tbody>
-                        {
+                            {
                           loader ? <div className="loader-box"><div className="loader-30"></div></div> : 
                           slotsData.map((slot, i) => { return <tr key={i}>
                                 <td width="25%">{slot.locationName}</td>
@@ -69,7 +69,7 @@ const  Sample = (props) => {
                                 {/* <td width="100px">{"Test"}</td> */}
                               </tr>
                           })
-                        }                             
+                        }                              
                             </tbody>
                           </Table>
                         </div>

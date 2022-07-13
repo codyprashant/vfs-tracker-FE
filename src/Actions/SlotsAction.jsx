@@ -15,10 +15,12 @@ export const getSlotsByLocation = async (locationCode) => {
     }
 }
 
-export const getSlotsData = async () => {
+export const getSlotsData = async (source, destination) => {
 
-    const slotsData = await axios.get(`${BACKEND_URL}/api/users/getSlots`)
+    let postData = { source: source, destination : destination};
+    const slotsData = await axios.post(`${BACKEND_URL}/api/users/getSlots`, postData)
     .catch(err => {return {status: 'ERROR'}})
+
     // console.log(signupUser)
     if (slotsData.status === 200){
         return slotsData.data;
