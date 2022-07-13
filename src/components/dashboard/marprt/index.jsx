@@ -33,7 +33,7 @@ const  Sample = (props) => {
 
     return (
          <Fragment>
-         <Breadcrumb parent="Dashboard" title="IND-NLD Slots"/>
+         <Breadcrumb parent="Dashboard" title="Morocco - Portugal Slots"/>
           <Container fluid={true}>
             <Row>
               <Col xl="12">
